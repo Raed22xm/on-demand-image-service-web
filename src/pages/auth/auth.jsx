@@ -1,6 +1,12 @@
-function Auth(){
-    return(
-        <h1>Auth Page</h1>
+import { Link } from "react-router-dom"
+
+function Auth() {
+    return (
+        <div>
+            <Link to="/" >
+                <button>back to home</button>
+            </Link>
+        </div>
     )
 }
 
