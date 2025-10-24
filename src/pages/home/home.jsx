@@ -4,6 +4,7 @@ import BrokenImageOutlinedIcon from '@mui/icons-material/BrokenImageOutlined';
 import BoltOutlinedIcon from '@mui/icons-material/BoltOutlined';
 import ShieldOutlinedIcon from '@mui/icons-material/ShieldOutlined';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
+import Footer from "../../components/footer/footer";
 function Home() {
     return (
         <div  >
@@ -26,11 +27,11 @@ function Home() {
                             View Demo
                         </button>
                     </div>
-                    
+
                     {/* Hero Image */}
                     <div className="relative max-w-4xl mx-auto">
                         <div className="w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-50 to-purple-50">
-                            <img 
+                            <img
                                 src="https://images.unsplash.com/photo-1623715537851-8bc15aa8c145?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwd29ya3NwYWNlfGVufDF8fHx8MTc2MTAxMjk3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                                 alt="Modern workspace setup"
                                 className="w-full h-full object-cover"
@@ -55,7 +56,7 @@ function Home() {
                             Everything you need for professional image rescaling
                         </p>
                     </div>
-                    
+
                     <div className="grid md:grid-cols-3 gap-8">
                         {/* Lightning Fast Card */}
                         <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
@@ -82,7 +83,7 @@ function Home() {
                                 Your images are encrypted and automatically deleted after 24 hours for maximum privacy.
                             </p>
                         </div>
-                         
+
                         {/* Easy Download Card */}
                         <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
                             <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-600 rounded-full flex items-center justify-center mb-6 mx-auto">
@@ -104,11 +105,18 @@ function Home() {
                 </div>
             </div>
 
-           <div className="bg-gray-100 p-10" color="black"  >
-             <p>Place</p>
-           </div>
-
+            {/* Call to Action Section */}
+            <div className="bg-blue-400 flex flex-col items-center p-20">
+                <h2 className="text-center font-bold mb-5 text-3xl text-white">Ready to Get Started</h2>
+                <p className="text-center font-bold mb-5 text-white">Join thousands of users who trust ResizeHub for their image rescaling needs.</p>
+                <button className="bg-white hover:bg-blue-700 text-black p-3 rounded-lg font-semibold text-lg transition-colors duration-200 flex items-center gap-2 shadow-lg">
+                    <BrokenImageOutlinedIcon />
+                    Start Resizing Free
+                </button>
+            </div>
             
+            <Footer />
+
         </div>
     )
 }
