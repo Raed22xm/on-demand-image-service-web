@@ -104,7 +104,7 @@ function Home() {
                 </div>
             </div>
 
-           <div className="bg-gray-100 p-10" color="black" >
+           <div className="bg-gray-100 p-10" color="black"  >
              <p>Place</p>
            </div>
 
